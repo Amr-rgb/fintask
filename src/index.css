@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply py-4 px-8 rounded-full border-[3px] border-black shadow-[4px_4px_0_#000];
+  }
+}
