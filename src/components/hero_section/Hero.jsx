@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 py-20 lg:py-32">
       <div className="flex flex-col items-center text-center">
         <HeroTitle />
 
@@ -14,11 +14,18 @@ const Hero = () => {
         Try Now - Free!
         </button>
 
-        <div className="mt-8 flex items-center space-x-2">
+        <div className="mt-8 mb-10 flex items-center space-x-2">
           <img src="/assets/icons/CheckCircle.svg" alt="" />
           <p>Excellent 4.9 out of 5</p>
           <img src="/assets/sitejabber.png" alt="" />
         </div>
+
+        <img className="max-w-[90vw] translate-x-[2%]" src="/assets/hero-img.png" alt="" />
+      </div>
+
+      <div className="hidden xl:block">
+      <img className="-z-10 absolute top-[23rem] -left-6" src="/assets/hero-left-img.png" alt="" />
+      <img className="-z-10 absolute top-[15rem] -right-14" src="/assets/hero-right-img.png" alt="" />
       </div>
     </div>
   );
